@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio - John</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300&family=Poppins:wght@300;800&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@600&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <input type="checkbox" id="nav-toggle" class="nav-toggle">
+        <label for="nav-toggle" class="nav-toggle-label">
+            <span></span>
+        </label>
+        <nav>
+            <div class="logo">
+                <img src="images/avatar.png" alt="Avatar">
+                <h1>Tooyang</h1>
+            </div>
+            
+            <ul>
+                <li><a href="#home">Home</a></li>
+                <li><a href="#works">Works</a></li>
+                <li><a href="#education">Education</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+    
+    <section id="home" class="intro">
+        <div class="left-container">
+            <div class="profile-container">
+                <div class="splash-background">
+                    <img src="images/splash_img.png" alt="Splash Background">
+                </div>
+                <div class="profile-pic">
+                    <img src="images/homepfp.png" alt="Profile Picture">
+                </div>
+            </div>
+        </div>
+        <div class="right-container">
+            <div class="intro-text">
+                <h2>Hi, I'm John</h2>
+                <p>An aspiring Web Developer</p>
+                <div class="skills">
+                    <img src="images/js.png" alt="JavaScript" style="--i:0;">
+                    <img src="images/htm.png" alt="HTML" style="--i:1;">
+                    <img src="images/ps.png" alt="Photoshop" style="--i:2;">
+                    <img src="images/ibis.png" alt="Ibis Paint X" style="--i:3;">
+                    <img src="images/css.png" alt="CSS" style="--i:4;">
+                    <img src="images/python.png" alt="Python" style="--i:5;">
+                    <img src="images/canva.png" alt="Canva" style="--i:6;">
+                </div>
+            </div>
+        </div>
+    </section>
+    <section id="works" class="works">
+        <div class="work-container">
+            <h1>MY WORKS</h1>
+            <img src="images/work.png" alt="Work Image" class="work-image" onclick="revealContainers()">
+            <div class="hidden-containers">
+                <div class="container1" onclick="window.location.href='https://toyaaaang.github.io/calculator-app/'">
+                    <h2>Calculator</h2>
+                    <p>Click to view</p>
+                    <p>A simple calculator made with CSS, Js and HTML</p>
+                </div>
+                <div class="container1" onclick="window.location.href='https://toyaaaang.github.io/online-resume/'">
+                    <h2>Online-Resume</h2>
+                    <p>Click to view</p>
+                    <p>An Online Resume made with CSS and HTML</p>
+                </div>
+                <div class="container1" onclick="window.location.href='https://toyaaaang.github.io/rock_paper_sciGame/'">
+                    <h2>Rock Paper Scissors</h2>
+                    <p>Click to view</p>
+                    <p>A simple game made with HTML, CSS and Js</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="education" class="education">
+        <div class="education-container">
+            <h1>EDUCATION</h1>
+            <div class="group">
+                <div class="item" data-bg="images/elem.jpeg">
+                    <div class="content">
+                        <h2>Primary Education</h2>
+                        <p>Amontay Elementary School</p>
+                    </div>
+                </div>
+            
+                <div class="item" data-bg="images/highschool.jpg">
+                    <div class="content">
+                        <h2>Secondary Education</h2>
+                        <p>Amontay National High School</p>
+                    </div>
+                </div>
+            
+                <div class="item" data-bg="images/dll.jpg">
+                    <div class="content">
+                        <h2>Tertiary Education</h2>
+                        <p>Dalubhasaan ng Lungsod ng Lucena</p>
+                    </div>
+                </div>
+            </div>  
+        </div>
+    </section>
+    <section id="about" class="about-container">
+        <div class="left-about">
+            <div class="profile-about">
+                <div class="splash-about">
+                    <img src="images/splash_img.png" alt="Splash Background">
+                </div>
+                <div class="about-img">
+                    <img src="images/aboutpfp.png" alt="Profile Picture">
+                </div>
+            </div>
+        </div>
+        <div class="right-about">
+            <div class="about-text">
+                <h2>ABOUT ME</h2>
+                <h3>I'm John an aspiring web developer</h3>
+                <p>Hi there! I'm John, a digital artist and software developer. I love bringing ideas to life through colorful visuals in Adobe Photoshop and ibisPaint. When I'm not painting, I'm coding cool stuff with Python and Java. Let's explore the exciting world where art meets technology together!</p>
+            </div>
+        </div>
+    </section>
+
+    <section id="contact">
+        <div class="contact-header">
+            <h2>CONTACT ME</h2>
+        </div>
+        <div class="contact-container">
+            <div class="social-media">
+                <h3>Social Media</h3>
+                <ul>
+                    <li>
+                        <img src="images/logos_messenger.png" alt="Messenger">
+                        <div class="social-info">
+                            <p><a href="https://www.facebook.com/jomari.estoya?mibextid=ZbWKwL">John Estoya</a></p>
+                        </div>
+                    </li>
+                    <li>
+                        <img src="images/skill-icons_instagram.png" alt="Instagram">
+                        <div class="social-info">
+                            <p><a href="https://www.instagram.com/jhn_estoya?igsh=MXRkb3JvMnZ1NG90Nw==">@jhn_estoya</a></p>
+                        </div>
+                    </li>
+                    <li>
+                        <img src="images/logos_facebook.png" alt="Facebook">
+                        <div class="social-info">
+                            <p><a href="https://www.facebook.com/jomari.estoya?mibextid=ZbWKwL">John Estoya</a></p>
+                        </div>
+                    </li>
+                    <li>
+                        <img src="images/logos_google-gmail.png" alt="Email">
+                        <div class="social-info">
+                            <p><a href="mailto:tinapa218@gmail.com">tinapa218@gmail.com</a></p>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+            <div class="get-in-touch">
+                <h3>Get in Touch</h3>
+                <form action="mailto:rdayo2016@gmail.com" method="post" enctype="text/plain">
+                    <label for="name">Name:</label>
+                    <input type="text" id="name" name="name" required>
+                    <label for="email">Email:</label>
+                    <input type="email" id="email" name="email" required>
+                    <label for="message">Message:</label>
+                    <textarea id="message" name="message" required></textarea>
+                    <button type="submit">Send</button>
+                </form>
+            </div>
+        </div>
+    </section>
+    <footer>
+        <p>&copy;2024-John Estoya</p>
+        <p>@All Rights Reserved</p>
+    </footer>
+    </section>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.9.1/gsap.min.js"></script>
+    <script src="scripts.js"></script>
+</body>
+</html>
